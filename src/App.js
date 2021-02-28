@@ -1,11 +1,18 @@
 import React from 'react';
-import { hot } from 'react-hot-loader';
-import './App.css';
 
-const App = () => (
-    <div className="App">
-        Hello React Webpack...!
+import { Component, PureComponent, Functional } from './components';
+
+import './App.css'
+
+function App() {
+  return (
+    <div className='App'>
+      <Component />
+      <PureComponent />
+      <Functional />
+      {React.createElement('span', null, 'Im React Create Element')}
     </div>
-);
+  );
+}
 
-export default hot(module)(App);
+export default App;
