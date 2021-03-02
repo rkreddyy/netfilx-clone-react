@@ -15,8 +15,16 @@ module.exports = {
                 loader: 'babel-loader',
                 test: /\.(js|jsx)$/,
                 exclude: /node_modules/,
-            }
-        ]     
+            },
+            {
+                test: /\.(png|jpe?g|gif)$/i,
+                use: [
+                    {
+                        loader: 'file-loader',
+                    },
+                ],
+            },
+        ]
     },
     resolve: {
         extensions: [".js", ".jsx", ".css", ".scss"],
