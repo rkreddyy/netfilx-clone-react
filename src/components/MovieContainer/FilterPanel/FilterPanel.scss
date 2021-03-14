@@ -1,0 +1,31 @@
+@import "../../../assets/scss/colors";
+
+.FilterPanel {
+  color: $white;
+
+  &-release {
+    color: $white;
+    background-color: $dark;
+    border: none;
+    font-size: 1em;
+    padding-right: 5px;
+    margin-left: 2em;
+
+    &:hover {
+      color: $pink;
+    }
+
+    &:focus {
+      outline: none;
+    }
+  }
+
+  &-sortby,
+  &-release {
+    font-weight: 400;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+}
