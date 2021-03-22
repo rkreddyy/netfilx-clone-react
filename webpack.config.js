@@ -19,9 +19,7 @@ module.exports = env => {
     },
     devServer: {
       contentBase: DIST_DIR,
-      port: 3000,
-      hot: true,
-      open: true,
+      port: 3000
     },
     module: {
       rules: [
@@ -38,7 +36,7 @@ module.exports = env => {
           ],
         },
         {
-          test: /\.(png|jpg|gif)$/i,
+          test: /\.(png|jpg|gif|svg)$/i,
           use: [
             {
               loader: "url-loader",
